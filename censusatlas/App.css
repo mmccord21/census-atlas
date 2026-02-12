@@ -1,0 +1,48 @@
+/* Reset & Base */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #111827; /* gray-900 */
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100%; /* Changed from 100vw to prevent scrollbars */
+  overflow: hidden;
+  background-color: #111827;
+  color: #f3f4f6;
+}
+
+.main-content {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.mobile-toggle-btn {
+  display: none;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 30;
+  padding: 0.5rem;
+  background-color: #1f2937;
+  border-radius: 0.5rem;
+  border: 1px solid #374151;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-toggle-btn:hover {
+  background-color: #374151;
+}
+
+@media (max-width: 768px) {
+  .mobile-toggle-btn {
+    display: block;
+  }
+}

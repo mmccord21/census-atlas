@@ -1,0 +1,5 @@
+{
+  "name": "CensusAtlas",
+  "description": "A professional geospatial visualization tool for analyzing US Census data trends across counties and zip codes using interactive heatmaps.",
+  "requestFramePermissions": []
+}
