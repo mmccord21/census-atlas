@@ -65,7 +65,7 @@ export const MAP_ZOOM_DEFAULT = 4;
 // Production Security: Use environment variable. 
 // If running locally without a build system, you may temporarily replace this string, 
 // but do not commit real keys to GitHub.
-export const CENSUS_API_KEY = (import.meta as any).env?.VITE_CENSUS_API_KEY || '18194c8facbdaea7356f8d15aa061f26cac14d72';
+export const CENSUS_API_KEY = (import.meta as any).env?.CENSUS_API || '';
 
 export const US_STATES: USState[] = [
   { name: 'Alabama', fips: '01' },
